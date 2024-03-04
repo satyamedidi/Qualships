@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Feb 06 2024 05:02:14 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65c1b9a9461c1ec581da0022" data-wf-site="65c1b9a9461c1ec581d9ff84" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Contact - Cargo X - Webflow Ecommerce website template</title>
+<meta content="Need a website for your freight company? Cargo X is the perfect logistics Webflow Template that is great for inventory management, warehouse, or shipping businesses." name="description"/>
+<meta content="Contact - Cargo X - Webflow Ecommerce website template" property="og:title"/>
+<meta content="Need a website for your freight company? Cargo X is the perfect logistics Webflow Template that is great for inventory management, warehouse, or shipping businesses." property="og:description"/>
+<meta content="https://uploads-ssl.webflow.com/638f532e7e769f0c4f3fbb53/638f837908ae668bb58f28f9_cargo-x-webflow-template.png" property="og:image"/>
+<meta content="Contact - Cargo X - Webflow Ecommerce website template" property="twitter:title"/>
+<meta content="Need a website for your freight company? Cargo X is the perfect logistics Webflow Template that is great for inventory management, warehouse, or shipping businesses." property="twitter:description"/>
+<meta content="https://uploads-ssl.webflow.com/638f532e7e769f0c4f3fbb53/638f837908ae668bb58f28f9_cargo-x-webflow-template.png" property="twitter:image"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Webflow" name="generator"/>
+<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+<link href="css/webflow.css" rel="stylesheet" type="text/css"/>
+<link href="css/qualships-43cc4a-37c0196bded20ca085acc7.webflow.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+<link href="images/favicon.svg" rel="shortcut icon" type="image/x-icon"/>
+<link href="images/webclip.svg" rel="apple-touch-icon"/>
+
+<link href="{{ url_for('static', filename='css/normalize.css') }}" rel="stylesheet"/>
+<link href="{{ url_for('static', filename='css/webflow.css') }}" rel="stylesheet"/>
+<link href="{{ url_for('static', filename='css/qualships.css') }}" rel="stylesheet"/>
+<script src="{{ url_for('static', filename='js/webflow.js') }}"></script>
+</head>
+<body>
+<div class="page-wrapper" style="opacity:0">
+<div class="bg-neutral-200">
+<div class="header-wrapper w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-w-id="3e4eae5f-c9fd-c051-dc9f-9317b4043bae" role="banner">
+<div class="container-default w-container">
+<div class="header-content-wrapper">
+<a class="header-logo-link w-nav-brand" href="home.html"><img alt="Black Logo - Qualships  Template" class="header-logo" src="/static/images/Qualship/QS_Dark.png"/></a>
+<div class="header-right-side">
+<nav class="header-nav-menu-wrapper w-nav-menu" role="navigation">
+<ul class="header-nav-menu-list" role="list">
+<li class="header-nav-list-item first">
+<a class="header-nav-link w-nav-link" href="home.html">Home</a>
+</li>
+<li class="header-nav-list-item">
+<a aria-current="page" class="header-nav-link w-nav-link w--current" href="about.html">About</a>
+</li>
+<li class="header-nav-list-item">
+<a class="header-nav-link w-nav-link" href="blog.html">SERVICES</a>
+</li>
+<li class="header-nav-list-item">
+<a class="header-nav-link w-nav-link" href="contact.html">CONTACT</a>
+</li>
+<li class="header-nav-list-item">
+<a class="header-nav-link w-nav-link" href="terms-and-conditions.html">TERMS AND CONDITIONS</a>
+</li>
+</ul>
+</nav>
+<div class="w-commerce-commercecartwrapper cart-button-wrapper mg-left-0---tablet" data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-query="" data-wf-cart-type="modal" data-wf-page-link-href-prefix="">
+<div class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal cart-wrapper" data-node-type="commerce-cart-container-wrapper" style="display:none">
+<div class="w-commerce-commercecartcontainer cart-container" data-node-type="commerce-cart-container" role="dialog">
+<div class="w-commerce-commercecartheader cart-header">
+<h4 class="w-commerce-commercecartheading heading-h4-size">Your Cart</h4>
+<a aria-label="Close cart" class="w-commerce-commercecartcloselink cart-close-button w-inline-block" data-node-type="commerce-cart-close-link" href="#" role="button">
+<div class="line-square-icon"></div>
+</a>
+</div>
+<div class="w-commerce-commercecartformwrapper cart-form-wrapper">
+<form class="w-commerce-commercecartform" data-node-type="commerce-cart-form" style="display:none">
+<script id="wf-template-ec165341-37e6-2c17-98d2-3ceeb04f952f" type="text/x-wf-template"></script>
+<div class="w-commerce-commercecartlist cart-list" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-ec165341-37e6-2c17-98d2-3ceeb04f952f"></div>
+<div class="w-commerce-commercecartfooter cart-footer">
+<div aria-atomic="false" aria-live="" class="w-commerce-commercecartlineitem cart-line-item">
+<div class="cart-subtotal">Subtotal:</div>
+<div class="w-commerce-commercecartordervalue cart-subtotal-number"></div>
+</div>
+<div>
+<div data-node-type="commerce-cart-quick-checkout-actions">
+<a aria-haspopup="dialog" aria-label="Apple Pay" class="w-commerce-commercecartapplepaybutton pay-btn cart" data-node-type="commerce-cart-apple-pay-button" role="button" style="background-image:-webkit-named-image(apple-pay-logo-white);background-size:100% 50%;background-position:50% 50%;background-repeat:no-repeat" tabindex="0">
+<div></div>
+</a>
+<a aria-haspopup="dialog" class="w-commerce-commercecartquickcheckoutbutton pay-btn cart" data-node-type="commerce-cart-quick-checkout-button" role="button" style="display:none" tabindex="0"><svg class="w-commerce-commercequickcheckoutgoogleicon" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<polygon id="google-mark-a" points="0 .329 3.494 .329 3.494 7.649 0 7.649"></polygon>
+<polygon id="google-mark-c" points=".894 0 13.169 0 13.169 6.443 .894 6.443"></polygon>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<path d="M10.5967,12.0469 L10.5967,14.0649 L13.1167,14.0649 C14.6047,12.6759 15.4577,10.6209 15.4577,8.1779 C15.4577,7.6339 15.4137,7.0889 15.3257,6.5559 L7.8887,6.5559 L7.8887,9.6329 L12.1507,9.6329 C11.9767,10.6119 11.4147,11.4899 10.5967,12.0469" fill="#4285F4"></path>
+<path d="M7.8887,16 C10.0137,16 11.8107,15.289 13.1147,14.067 C13.1147,14.066 13.1157,14.065 13.1167,14.064 L10.5967,12.047 C10.5877,12.053 10.5807,12.061 10.5727,12.067 C9.8607,12.556 8.9507,12.833 7.8887,12.833 C5.8577,12.833 4.1387,11.457 3.4937,9.605 L0.8747,9.605 L0.8747,11.648 C2.2197,14.319 4.9287,16 7.8887,16" fill="#34A853"></path>
+<g transform="translate(0 4)">
+<mask fill="#fff" id="google-mark-b">
+<use xlink:href="#google-mark-a"></use>
+</mask>
+<path d="M3.4639,5.5337 C3.1369,4.5477 3.1359,3.4727 3.4609,2.4757 L3.4639,2.4777 C3.4679,2.4657 3.4749,2.4547 3.4789,2.4427 L3.4939,0.3287 L0.8939,0.3287 C0.8799,0.3577 0.8599,0.3827 0.8459,0.4117 C-0.2821,2.6667 -0.2821,5.3337 0.8459,7.5887 L0.8459,7.5997 C0.8549,7.6167 0.8659,7.6317 0.8749,7.6487 L3.4939,5.6057 C3.4849,5.5807 3.4729,5.5587 3.4639,5.5337" fill="#FBBC04" mask="url(#google-mark-b)"></path>
+</g>
+<mask fill="#fff" id="google-mark-d">
+<use xlink:href="#google-mark-c"></use>
+</mask>
+<path d="M0.894,4.3291 L3.478,6.4431 C4.113,4.5611 5.843,3.1671 7.889,3.1671 C9.018,3.1451 10.102,3.5781 10.912,4.3671 L13.169,2.0781 C11.733,0.7231 9.85,-0.0219 7.889,0.0001 C4.941,0.0001 2.245,1.6791 0.894,4.3291" fill="#EA4335" mask="url(#google-mark-d)"></path>
+</g>
+</svg><svg class="w-commerce-commercequickcheckoutmicrosofticon" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" fill-rule="evenodd">
+<polygon fill="#F05022" points="7 7 1 7 1 1 7 1"></polygon>
+<polygon fill="#7DB902" points="15 7 9 7 9 1 15 1"></polygon>
+<polygon fill="#00A4EE" points="7 15 1 15 1 9 7 9"></polygon>
+<polygon fill="#FFB700" points="15 15 9 15 9 9 15 9"></polygon>
+</g>
+</svg>
+<div>Pay with browser.</div>
+</a>
+</div>
+<a class="w-commerce-commercecartcheckoutbutton btn-primary mg-top-16px" data-loading-text="Hang Tight..." data-node-type="cart-checkout-button" href="checkout.html" value="Continue to Checkout">Continue to Checkout</a>
+</div>
+</div>
+</form>
+<div class="w-commerce-commercecartemptystate empty-state cart-empty">
+<div class="heading-h5-size mg-bottom-40px">No items found.</div>
+<a class="btn-primary w-button" href="packages.html">Go to packages <span class="arrow-right"></span></a>
+</div>
+<div aria-live="" class="w-commerce-commercecarterrorstate error-message cart-error" data-node-type="commerce-cart-error" style="display:none">
+<div class="w-cart-error-msg" data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">Product is not available in this quantity.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hamburger-menu-wrapper w-nav-button" data-w-id="ec165341-37e6-2c17-98d2-3ceeb04f9558">
+<div class="hamburger-menu-bar top"></div>
+<div class="hamburger-menu-bar bottom"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="section hero v8">
+<div class="container-default w-container">
+<div class="w-layout-grid grid-2-columns contact-grid">
+<div class="inner-container _472px _100---tablet" data-w-id="fccd55ba-dbb0-dac9-f73d-841806759851" id="w-node-fccd55ba-dbb0-dac9-f73d-841806759851-81da0022" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="inner-container _550px---tablet">
+<div class="inner-container _500px---mbl">
+<div class="inner-container _450px---tablet">
+<div class="inner-container _400px---mbl">
+<div class="inner-container _380px---mbp">
+<div class="subtitle" id="w-node-fccd55ba-dbb0-dac9-f73d-841806759857-81da0022">Contact us/</div>
+<div class="mg-bottom-16px">
+<div class="mg-bottom-16px">
+<h1 class="display-1">Contact us<span class="color-accent-1">.</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="inner-container _470px _100-tablet">
+<p class="mg-bottom-0">Call our central booking number and talk with our friendly staff.</p>
+</div>
+</div>
+</div>
+<div class="divider _40px"></div>
+<div class="contact-section-links">
+<div class="mg-bottom-28px">
+<a class="send-email---link w-inline-block" data-w-id="fccd55ba-dbb0-dac9-f73d-841806759866" href="mailto:info@qualships.com">
+<div class="circle v1 black"><img alt="Email Icon - Qualships  Template" class="icon-size v1 filter-v2 _26px" loading="lazy" src="/static/images/email-cargo-x-webflow-template.svg"/></div>
+<div class="team-member-cards">
+<div class="mg-bottom-4px">
+<div class="text-200 medium color-neutral-600">Send me an email</div>
+</div>
+<div class="send-email-text">info@qualships.com <span class="line-square-icon color-accent-1"></span></div>
+</div>
+</a>
+</div>
+<a class="give-a-call---link w-inline-block" data-w-id="fccd55ba-dbb0-dac9-f73d-841806759871" href="tel:(414)946-4530">
+<div class="circle v1 black"><img alt="Phone Icon - Qualships  Template" class="icon-size v1 filter-v2 _26px" loading="lazy" src="/static/images/phone-cargo-x-webflow-template.svg"/></div>
+<div class="team-member-cards">
+<div class="mg-bottom-4px">
+<div class="text-200 medium color-neutral-600">Give me a call</div>
+</div>
+<div class="give-call-text">(+61) 426476533 <span class="line-square-icon color-accent-1"></span></div>
+</div>
+</a>
+</div>
+</div>
+<div class="position-relative contact-form" data-w-id="16e91aad-d7b0-9455-e6bc-7fec05ff5113" id="w-node-_16e91aad-d7b0-9455-e6bc-7fec05ff5113-81da0022" style="opacity:0">
+<div class="card form w-form">
+<form data-name="Email Form" data-wf-element-id="d989bb5b-dd32-08b4-bfbf-9eaaa020e0c6" data-wf-page-id="65c1b9a9461c1ec581da0022" id="email-form" method="get" name="email-form">
+<div class="w-layout-grid grid-2-columns form contact">
+<div><label class="hidden" for="name">Name</label><input class="input light w-input" data-name="Name" id="name" maxlength="256" name="Name" placeholder="Full name" required="" type="text"/></div>
+<div><label class="hidden" for="email">Email</label><input class="input light w-input" data-name="Email" id="email" maxlength="256" name="Email" placeholder="Email address" required="" type="email"/></div>
+<div><label class="hidden" for="phone">Phone</label><input class="input light w-input" data-name="Phone" id="phone" maxlength="256" name="Phone" placeholder="Phone number" required="" type="tel"/></div>
+<div><label class="hidden" for="subject">Company</label><input class="input light w-input" data-name="Subject" id="subject" maxlength="256" name="Subject" placeholder="Subject" required="" type="text"/></div>
+<div id="w-node-f47b2986-7bae-1c7d-6887-02800330513c-81da0022"><label class="hidden" for="message">Leave us a message</label><textarea class="text-area light w-input" data-name="Message" id="message" maxlength="5000" name="Message" placeholder="Please type your message here..."></textarea></div>
+<div class="form-btn-wrapper _240px _100-mbp" id="w-node-f47b2986-7bae-1c7d-6887-028003305140-81da0022">
+<div class="form-btn" data-w-id="f47b2986-7bae-1c7d-6887-028003305141"><input class="btn-primary bg-white-hover form-btn---primary w-button" data-wait="Please wait..." id="w-node-f47b2986-7bae-1c7d-6887-028003305142-81da0022" type="submit" value="Send Message"/>
+<div class="arrow-right form-btn---arrow"></div>
+</div>
+</div>
+</div>
+</form>
+<div class="success-message w-form-done">
+<div>
+<div class="line-rounded-icon success-message-check large"></div>
+<h2 class="heading-h3-size color-neutral-100">Thank you</h2>
+<div>Your message has been submitted.<br/>We will get back to you within 24-48 hours.</div>
+</div>
+</div>
+<div class="error-message w-form-fail">
+<div>Oops! Something went wrong.</div>
+</div>
+</div>
+<div class="half-bg-right contact"></div>
+</div>
+</div>
+</div>
+<div class="half-bg-top"></div>
+</section>
+<section class="section bottom-120px overflow-hidden contact-office">
+<div class="container-default w-container">
+<div class="position-relative">
+<div class="w-layout-grid grid-1-column location-grid">
+<div class="mg-bottom-90px mg-bottom-0---tablet">
+<div class="flex-horizontal start flex-vertical---mbl"><img alt="Visit Our Location - Qualships  Template" class="our-office-image" data-w-id="210aa18d-76d5-4da4-7d4c-4cdb60829d50" sizes="(max-width: 767px) 100vw, (max-width: 1439px) 95vw, 1210px" src="/static/images/our-office-cargo-x-webflow-template.jpg" srcset="/static/images/our-office-cargo-x-webflow-template-p-500.jpg 500w, /static/images/our-office-cargo-x-webflow-template-p-800.jpg 800w, /static/images/our-office-cargo-x-webflow-template-p-1080.jpg 1080w, /static/images/our-office-cargo-x-webflow-template-p-1600.jpg 1600w, /static/images/our-office-cargo-x-webflow-template.jpg 2420w" style="opacity:0"/></div>
+</div>
+<div class="card our-ofiice-card-wrapper" data-w-id="210aa18d-76d5-4da4-7d4c-4cdb60829d51" style="opacity:0">
+<div class="half-bg-left v12"></div>
+<div class="position-relative">
+<div class="inner-container _550px---tablet">
+<div class="inner-container _500px---mbl">
+<div class="subtitle">Our office/</div>
+<h2 class="display-2 color-neutral-100 mg-bottom-24px">Visit our location<span class="color-accent-1">.</span></h2>
+<div class="inner-container _468px _100-tablet">
+<p class="color-neutral-300 mg-bottom-24px keep"><a href="https://maps.google.com/maps?q=Qualships,%2024/33%20Elizabeth%20Street,%20WETHERILL%20PARK%20NSW%202164%20Australia" style="
+                        color: #edf5ed" target="_blank">Qualships, 24/33 Elizabeth Street, WETHERILL PARK NSW 2164 Australia</a></p>
+</div>
+</div>
+</div>
+<div class="inner-container _378px _100---mbp">
+<div class="flex-horizontal space-between wrapper-on-mbp">
+<div class="mg-right-24px">
+<div class="mg-bottom-14px">
+<div class="text-200 bold color-neutral-100">Email</div>
+</div>
+<a class="our-office-link" href="mailto:info@qualships.com">info@qualships.com</a>
+</div>
+<div>
+<div class="mg-bottom-14px">
+<div class="text-200 bold color-neutral-100">Phone</div>
+</div>
+<a class="our-office-link" href="tel:(+61) 426476533">(+61) 426476533</a>
+</div>
+</div>
+<div class="divider _40px"></div>
+</div>
+<a aria-current="page" class="link-wrapper color-neutral-100 heading-h4-size w-inline-block w--current" data-w-id="210aa18d-76d5-4da4-7d4c-4cdb60829d70" href="contact.html">
+<div class="link-text">Visit now</div>
+<div class="line-rounded-icon link-icon-right color-accent-1"></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section _120px">
+<div class="container-default w-container">
+<div class="inner-container _632px center" data-w-id="7818ec24-6b68-ea6a-5284-22bd10d277be" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="text-center mg-bottom-64px">
+<div class="subtitle">FAQS/</div>
+<h2 class="display-2">Frequently asked questions<span class="color-accent-1">.</span></h2>
+<p class="mg-bottom-0">Cursus tincidunt tempor aliquam mattis et mi fames at id venenatis massa at egestas egestas dignissim nisl, in ipsum sed consequat <span class="text-no-wrap">in viverra.</span></p>
+</div>
+</div>
+<div class="w-layout-grid grid-1-column gap-row-0" data-w-id="7818ec24-6b68-ea6a-5284-22bd10d277c5" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="accordion-item-wrapper" data-w-id="7818ec24-6b68-ea6a-5284-22bd10d277c6">
+<div class="accordion-content-wrapper">
+<div class="accordion-header">
+<div class="inner-container _1000px">
+<h3 class="accordion-title">What types of services does Qualships offer?</h3>
+</div>
+</div>
+<div class="acordion-body" style="height:0px;-webkit-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="accordion-spacer"></div>
+<div class="inner-container _754px _100-tablet">
+<p class="mg-bottom-0">Qualships specializes in ship repair, marine surveying, marine engineering, major marine project management, and various marine services. Our comprehensive range of expertise covers everything from routine maintenance to complex repair projects.</p>
+</div>
+</div>
+</div>
+<div class="accordion-icon-wrapper">
+<div class="line-rounded-icon accordion-icon" style="color:rgb(35,92,242)"></div>
+</div>
+</div>
+<div class="accordion-item-wrapper" data-w-id="7818ec24-6b68-ea6a-5284-22bd10d277d2">
+<div class="accordion-content-wrapper">
+<div class="accordion-header">
+<div class="inner-container _1000px">
+<h3 class="accordion-title">What sets Qualships apart from other ship repair companies</h3>
+</div>
+</div>
+<div class="acordion-body" style="height:0px;-webkit-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="accordion-spacer"></div>
+<div class="inner-container _754px _100-tablet">
+<p class="mg-bottom-0">Qualships distinguishes itself through its extensive experience, highly skilled team, and commitment to excellence. As Australia's premier ship repair and marine surveying company, we offer unmatched expertise, top-quality service, and innovative solutions tailored to meet the unique needs of our clients.</p>
+</div>
+</div>
+</div>
+<div class="accordion-icon-wrapper">
+<div class="line-rounded-icon accordion-icon" style="color:rgb(35,92,242)"></div>
+</div>
+</div>
+<div class="accordion-item-wrapper" data-w-id="7818ec24-6b68-ea6a-5284-22bd10d277de">
+<div class="accordion-content-wrapper">
+<div class="accordion-header">
+<div class="inner-container _1000px">
+<h3 class="accordion-title">How does Qualships ensure the quality of its services?</h3>
+</div>
+</div>
+<div class="acordion-body" style="height:0px;-webkit-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="accordion-spacer"></div>
+<div class="inner-container _754px _100-tablet">
+<p class="mg-bottom-0">Quality is a top priority at Qualships. We maintain rigorous quality control measures at every stage of our operations, from initial assessment to project completion. Our team of experienced professionals, including marine engineers, master mariners, ship fitters, welders, lifeboat technicians, and electricians, adhere to industry standards and best practices to deliver superior outcomes consistently.</p>
+</div>
+</div>
+</div>
+<div class="accordion-icon-wrapper">
+<div class="line-rounded-icon accordion-icon" style="color:rgb(35,92,242)"></div>
+</div>
+</div>
+<div class="accordion-item-wrapper" data-w-id="7818ec24-6b68-ea6a-5284-22bd10d277ea">
+<div class="accordion-content-wrapper">
+<div class="accordion-header">
+<div class="inner-container _1000px">
+<h3 class="accordion-title">Is Qualships equipped to handle large-scale marine projects?</h3>
+</div>
+</div>
+<div class="acordion-body" style="height:0px;-webkit-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 20px, 0) scale3d(0.96, 0.96, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="accordion-spacer"></div>
+<div class="inner-container _754px _100-tablet">
+<p class="mg-bottom-0">Absolutely. With our extensive experience in major marine project management, Qualships is well-equipped to handle projects of any scale. Our team has the expertise, resources, and capabilities to manage complex projects efficiently, ensuring timely delivery and exceptional results.</p>
+</div>
+</div>
+</div>
+<div class="accordion-icon-wrapper">
+<div class="line-rounded-icon accordion-icon" style="color:rgb(35,92,242)"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section top-120px overflow-hidden">
+<div class="container-default w-container">
+<div class="text-center---tablet" data-w-id="a453c588-e63e-8cd1-440b-f65a0dcb66d2" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="w-layout-grid grid-2-columns title-and-paragraphs">
+<div class="inner-container _440px center---tablet">
+<div class="inner-container _400px---mbl center">
+<div class="inner-container _350px---mbp center">
+<div class="subtitle">Our partners/</div>
+<h2 class="display-2 mg-bottom-0">Brands &amp; companies we worked with<span class="color-accent-1">.</span></h2>
+</div>
+</div>
+</div>
+<div class="inner-container _550px center---tablet" id="w-node-a453c588-e63e-8cd1-440b-f65a0dcb66dd-81da0022">
+<p class="mg-bottom-12px mg-bottom-0px---tablet">A Legacy of Collaboration with Leading Brands Across Multiple Sectors</p>
+</div>
+</div>
+</div>
+<div class="divider _48px"></div>
+<div data-w-id="a453c588-e63e-8cd1-440b-f65a0dcb66e3" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+<div class="w-layout-grid grid-5-columns logo-strip-center"><img alt="Agency Logo - Qualships  Template" class="brand-image" src="/static/images/Qualship/bsm.png"/>
+<img alt="Agency Logo - Qualships  Template" class="brand-image" src="/static/images/Qualship/cspan.png"/>
+<img alt="Agency Logo - Qualships  Template" class="brand-image" src="/static/images/Qualship/fleet.png"/>
+<img alt="Agency Logo - Qualships  Template" class="brand-image" src="/static/images/Qualship/vships.png"/>
+<img alt="Agency Logo - Qualships  Template" class="brand-image" src="/static/images/Qualship/synergy.png"/>
+<img alt="Agency Logo - Qualships  Template" class="brand-image" src="/static/images/Qualship/berge_bulk.png"/></div>
+</div>
+</div>
+</section>
+<section class="section cta bg-gradient---half-white---black">
+<div class="container-default w-container">
+<div class="cta v2">
+<div class="position-relative z-index-1">
+<div class="w-layout-grid grid-2-columns title-and-buttons cta-v2-grid">
+<div class="z-index-1" data-w-id="a9d47548-aac0-c4e1-7d98-c34a87455729" id="w-node-a9d47548-aac0-c4e1-7d98-c34a87455729-87455725">
+<div class="inner-container _490px _100-tablet">
+<h2 class="display-2 mg-bottom-0 color-neutral-100">Ready to pull a trigger? Get a <span class="text-no-wrap">quote today.</span></h2>
+</div>
+</div>
+<div class="z-index-1" id="w-node-a9d47548-aac0-c4e1-7d98-c34a8745572d-87455725">
+<div class="buttons-row" data-w-id="11198b90-ed7a-b2eb-ee0a-43c2ed391ede">
+<a aria-current="page" class="btn-primary black w-button w--current" href="contact.html">Get a quote <span class="arrow-right"></span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg---cta v1"></div>
+</div>
+</div>
+</section>
+<footer class="footer-container">
+<div class="footer-bottom v1 alt">
+<div class="container-default w-container">
+<div class="footer-bottom-flex" data-w-id="dcb28dbc-ad37-8a39-ee7a-2a3586736ce6">
+<a class="footer-logo-wrapper mg-bottom-0 w-inline-block" href="index.html" id="w-node-dcb28dbc-ad37-8a39-ee7a-2a3586736ce7-91dd5701"><img alt="White Logo - Qualships  Template" class="footer-logo" src="/static/images/Qualship/QS_N.png"/></a>
+<div>
+<p class="mg-bottom-0 color-neutral-100">Copyright © Qualships | Designed by SK </p>
+
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="loading-bar-wrapper" data-w-id="8c8d3648-ee90-173f-259a-c5a55bee8ac7">
+<div class="loading-bar"></div>
+</div>
+<script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65c1b9a9461c1ec581d9ff84" type="text/javascript"></script>
+<script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
